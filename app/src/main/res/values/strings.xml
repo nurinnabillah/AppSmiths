@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Appsmiths</string>
+
+    <string-array name="admin_menu">
+        <item>User Management</item>
+        <item>Pickup Requests</item>
+        <item>Reports &amp; Analytics</item>
+        <item>System Settings</item>
+    </string-array>
+
+</resources>

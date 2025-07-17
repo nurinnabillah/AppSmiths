@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/userMain"
+    android:background="@drawable/userhomepage"
+    tools:context=".UserActivity">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/calistoga"
+        android:text="Welcome, User"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="40dp">
+
+        <!-- View Listings Button -->
+        <Button
+            android:id="@+id/btnViewListings"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#C6BA8B"
+            android:text="View My Listings"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <!-- Recycle Now Button -->
+        <Button
+            android:id="@+id/btnRecycleNow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#C6BA8B"
+            android:text="Recycle Now"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />/>
+
+    </LinearLayout>
+</RelativeLayout>

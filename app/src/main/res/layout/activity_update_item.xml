@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="@drawable/adminbg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="42dp"
+            android:fontFamily="@font/calistoga"
+            android:text="Recyclable Item Manager"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <!-- Update Recyclable Item -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Recyclable Item"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Name"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price per Kg (RM)"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnUpdateItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#9E7739"
+            android:text="Update Item"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="8dp"
+            android:onClick="updateItem"/>
+
+    </LinearLayout>
+</LinearLayout>

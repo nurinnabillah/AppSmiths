@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userhomepage"
+    android:id="@+id/adminMain"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- Background Image -->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/userpage2" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <!-- Overview Title -->
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/calistoga"
+                android:text="Welcome, Admin"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+
+            <!-- Dashboard Grid Cards -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:rowOrderPreserved="false">
+
+                <!-- Total Users Active -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="#DDD2A9	"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Users Active"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="#2D44A7"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Pending Pickups -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="#DDD2A9"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending Pickups"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvPickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="#2D44A7"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </GridLayout>
+
+            <!-- Menu Section -->
+            <!--  List Menu -->
+            <LinearLayout
+                android:id="@+id/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDD2A9"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="List Item"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow"
+                    app:tint="@color/cardview_dark_background" />
+            </LinearLayout>
+
+            <!-- Menu Item: Recycle Item -->
+            <LinearLayout
+                android:id="@+id/recycleItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDD2A9"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Recycle Item"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow"
+                    app:tint="@color/cardview_dark_background" />
+            </LinearLayout>
+
+            <!-- Menu Item: Pickup Request -->
+            <LinearLayout
+                android:id="@+id/pickupRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDD2A9"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pickup Request"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow"
+                    app:tint="@color/cardview_dark_background" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
